@@ -1,0 +1,31 @@
+FOODMAPS
+
+FLOW:
+
+-Vista splash: con duración de 2 a 5 segundos redirecciona a vista de inicio.
+	* Marca
+
+-Vista principal:
+	* Imagen de portada.
+	*	Título.
+	* Mapa.
+	* Call to action.
+	* Barra de búsqueda.
+	* Galeria de imágenes.
+
+-Modal
+	* Muestra la información general del restaurante seleccionado.
+
+-Evento Mouseover
+	* Call to action random para comer en el lugar.
+
+Pseudocódigo
+
+*Función activar vista splash/inicio (interval + fade).
+*Función inserción mapa de ubicación.
+*Función búsqueda y filtrado.
+*Función dibujar por medio del DOM en el documento los resultados (galeria).
+*Función activar modal.
+*Función escribir por medio del DOM la información en el modal.
+*Función evento mouseover.
+*Función regresar a vista principal.
