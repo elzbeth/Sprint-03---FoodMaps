@@ -12,7 +12,7 @@
   <link href="css/main.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-  <main>
+  <main class="container-fluid">
     <!-- SPLASH/MAIN SECTION -->
     <section id="start" class="container-fluid mt-0">
       <!-- SPLASH VIEW -->
@@ -24,68 +24,168 @@
         </div>
       </article>
       <!-- MAIN VIEW-->
-      <article id="main-page" class="container-fluid">
+      <section id="main-page" class="container-fluid mb-40">
         <div class="row center" >
           <!--TITLE-->
+          <!--title image-->
           <div class="row">
             <figure class="col s10 offset-s1 fake-hr">
               <img id="hero" class="responsive-img pb-20" src="assets/images/header.jpg" alt="header"/>
             </figure>
           </div>
+          <!--/title image-->
+          <!--title header-->
           <div id="title-container" class="container">
             <div class="col s10 offset-s1">
               <h1 id="title">FoodMaps</h1>
             </div>
           </div>
+          <!-- /title header-->
           <!--/TITLE-->
           <!--MAP-->
           <div id="map-container" class="container">
             <div class="row">
               <div class="col s10 offset-s1 fake-hr mb-40">
-            <figure>
-              <div id="map" >map frame</div>
-            </figure>
-          </div>
-          </div>
+                <figure>
+                  <div id="map">map frame</div>
+                </figure>
+              </div>
+            </div>
           </div>
           <!--/MAP-->
           <!--SEARCH-->
-          <div id="search-container" class="container">
+          <div id="search-container" class="container mb-40">
             <div id="search-bar" class="col s10 offset-s1 m6 offset-m3">
               <div class="input-field center">
-              <p class="flow-text text-white mb-20">It's lunch time!</p>
-              <input id="search" type="text" placeholder="" autocomplete=""><button class="btn btn-flat search-btn"><i class="fa fa-search"></i>&nbsp;Search</button>
-            </div>
+                <p class="flow-text text-white mb-20">It's lunch time!</p>
+                <input id="search" type="text" placeholder="  Looking for..." autocomplete="on"><button class="btn btn-flat search-btn mb-20"><i class="fa fa-search"></i>&nbsp;Search</button>
+              </div>
             </div>
           </div>
           <!--/SEARCH-->
           <!--RESULTS-->
-          <div id="results" class="container">
-            <div class="row">
-              <div class="rphoto">
+          <div id="results" class="container fake-hr pb-40">
+            <div class='row center'>
+              <div class='col s10 offset-s1'>
+                <div class="card-panel col s10 offset-s1 m5 offset-m1 l10 offset-l1">
+                  <div class="card-title">LOREM IPSUM</div>
+                  <div class="card-image">
+                    <img src="assets/images/05.jpg" class="responsive-img" />
+                  </div>
+                  <div class="card-content">
+                    <navbar>
+                      <a id="more" class="btn btn-flat modal-trigger"href="modal-info">More info</a>
+                      <a id="rating" class="btn btn-flat modal-trigger"href="modal-rating">Rating</a>
+                      <a id="reviews" class="btn btn-flat modal-trigger"href="modal-reviews">Reviews</a>
+                    </navbar>
+                  </div>
+                </div>
+                <div class="card-panel col s10 offset-s1 m5 offset-m1 l10 offset-l1">
+                  <div class="card-title">LOREM IPSUM</div>
+                  <div class="card-image">
+                    <img src="assets/images/01.jpg" class="responsive-img" />
+                  </div>
+                  <div class="card-content">
+                    <navbar>
+                      <a id="more" class="btn btn-flat modal-trigger"href="modal-info">More info</a>
+                      <a id="rating" class="btn btn-flat modal-trigger"href="modal-rating">Rating</a>
+                      <a id="reviews" class="btn btn-flat modal-trigger"href="modal-reviews">Reviews</a>
+                    </navbar>
+                  </div>
+                </div>
+                <div class="card-panel col s10 offset-s1 m5 offset-m1 l10 offset-l1">
+                  <div class="card-title">LOREM IPSUM</div>
+                  <div class="card-image">
+                    <img src="assets/images/02.jpg" class="responsive-img" />
+                  </div>
+                  <div class="card-content">
+                    <navbar>
+                      <a id="more" class="btn btn-flat modal-trigger"href="modal-info">More info</a>
+                      <a id="rating" class="btn btn-flat modal-trigger"href="modal-rating">Rating</a>
+                      <a id="reviews" class="btn btn-flat modal-trigger"href="modal-reviews">Reviews</a>
+                    </navbar>
+                  </div>
+                </div>
+                <div class="card-panel col s10 offset-s1 m5 offset-m1 l10 offset-l1">
+                  <div class="card-title">LOREM IPSUM</div>
+                  <div class="card-image">
+                    <img src="assets/images/03.jpg" class="responsive-img" />
+                  </div>
+                  <div class="card-content">
+                    <navbar>
+                      <a id="more" class="btn btn-flat modal-trigger"href="modal-info">More info</a>
+                      <a id="rating" class="btn btn-flat modal-trigger"href="modal-rating">Rating</a>
+                      <a id="reviews" class="btn btn-flat modal-trigger"href="modal-reviews">Reviews</a>
+                    </navbar>
+                  </div>
+                </div>
+                <div class="card-panel col s10 offset-s1 m5 offset-m1 l10 offset-l1">
+                  <div class="card-title">LOREM IPSUM</div>
+                  <div class="card-image">
+                    <img src="assets/images/04.jpg" class="responsive-img" />
+                  </div>
+                  <div class="card-content">
+                    <navbar>
+                      <a id="more" class="btn btn-flat modal-trigger"href="modal-info">More info</a>
+                      <a id="rating" class="btn btn-flat modal-trigger"href="modal-rating">Rating</a>
+                      <a id="reviews" class="btn btn-flat modal-trigger"href="modal-reviews">Reviews</a>
+                    </navbar>
+                  </div>
+                </div>
+                <div class="card-panel col s10 offset-s1 m5 offset-m1 l10 offset-l1">
+                  <div class="card-title">LOREM IPSUM</div>
+                  <div class="card-image">
+                    <img src="assets/images/05.jpg" class="responsive-img" />
+                  </div>
+                  <div class="card-content">
+                    <navbar>
+                      <a id="more" class="btn btn-flat modal-trigger"href="modal-info">More info</a>
+                      <a id="rating" class="btn btn-flat modal-trigger"href="modal-rating">Rating</a>
+                      <a id="reviews" class="btn btn-flat modal-trigger"href="modal-reviews">Reviews</a>
+                    </navbar>
+                  </div>
+                </div>
+                <div class="card-panel col s10 offset-s1 m5 offset-m1 l10 offset-l1">
+                  <div class="card-title">LOREM IPSUM</div>
+                  <div class="card-image">
+                    <img src="assets/images/03.jpg" class="responsive-img" />
+                  </div>
+                  <div class="card-content">
+                    <navbar>
+                      <a id="more" class="btn btn-flat modal-trigger"href="modal-info">More info</a>
+                      <a id="rating" class="btn btn-flat modal-trigger"href="modal-rating">Rating</a>
+                      <a id="reviews" class="btn btn-flat modal-trigger"href="modal-reviews">Reviews</a>
+                    </navbar>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
           <!--/RESULTS-->
         </div>
-      </article>
+        <footer>
+          <p class="center text-white mb-20">&copy; FoodMaps 2018.</p>
+        </footer>
+      </section>
+
     </section>
+
     <!--END SPLASH/MAIN SECTION -->
     <!--MODAL INFO-->
     <div id="modal" class="modal center responsive flow-text">
       <div class="modal-content mt-40">
-        <h2 id="info-title" class="">Restaurant</h2>
+        <h2 id="info-title" class="">Name</h2>
         <figure id="info-img" class="">Image</figure>
-        <h3 id="info-type" class="">Type</h3>
-        <div id="info-street" class="">Street</div>
-        <div id="info-district" class="">District</div>
+        <h3 id="info-category" class="">Type</h3>
+        <div id="info-address" class="">Address</div>
         <div id="info-phone" class="">Phone</div>
       </div>
       <div class="modal-footer flow-text">
         <div class="row">
-          <div id="info-cost" class="">Average Cost</div>
+          <div id="info-cost" class="">Average Cost Per Person</div>
+          <div id="info-rating" class="">Rating</div>
           <div id="info-reviews" class="">Reviews</div>
-          MODAL FOOTER
+          <button class="btn btn-flat search-btn"><i class="fa fa-order"></i>&nbsp;Order Now!</button>
         </div>
         <div class="row">
           <a href="#!" class="modal-action modal-close right">
@@ -96,6 +196,42 @@
       </div>
     </div>
     <!--/MODAL INFO-->
+    <!--MODAL RATING-->
+    <div id="modal" class="modal center responsive flow-text">
+      <div class="modal-content mt-40">
+
+      </div>
+      <div class="modal-footer flow-text">
+        <div class="row">
+
+        </div>
+        <div class="row">
+          <a href="#!" class="modal-action modal-close right">
+            <i class="fa fa-times responsive-img"></i>
+            <strong>Close</strong>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--/MODAL RATING-->
+    <!--MODAL REVIEWS-->
+    <div id="modal" class="modal center responsive flow-text">
+      <div class="modal-content mt-40">
+
+      </div>
+      <div class="modal-footer flow-text">
+        <div class="row">
+
+        </div>
+        <div class="row">
+          <a href="#!" class="modal-action modal-close right">
+            <i class="fa fa-times responsive-img"></i>
+            <strong>Close</strong>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--/MODAL REVIEWS-->
   </main>
   <!--SCRIPTS-->
   <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&;amp;language=es"></script>

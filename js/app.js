@@ -16,8 +16,8 @@ $(document).ready(function(e){
   //Search Bar & Filtering//
   $('#search').keyup(function() {
     var $searching = $(this).val().toLowerCase();
-    $('.restaurants').hide();
-    $('.restaurants').each(function() {
+    $('.results').hide();
+    $('.results').each(function() {
       var filter = $(this).data('name');
       if (filter.indexOf($searching) !== -1 && $searching.length !== 0) {
         $(this).show();

@@ -27,12 +27,12 @@ html, body{
 	background: -moz-linear-gradient(-45deg, rgba(244, 180, 0, 1) 0%,  rgba(245, 118, 0, 1) 95%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(-45deg, rgba(244, 180, 0, 1) 0%,rgba(245, 118, 0, 1)95%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(135deg, rgba(244, 180, 0, 1) 0%,rgba(245, 118, 0, 1) 95%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	height: 100%;
+	height: 100vh;
 	margin: 0;
 	padding: 0;
 	overflow-x: hidden;
-	overflow-y: hidden;
-	width: 100%;
+	/*overflow-y: hidden;*/
+	width: 100vw;
 }
 
 h1, h2, h3,h4, h5, h6, label{
@@ -40,7 +40,7 @@ h1, h2, h3,h4, h5, h6, label{
 	font-weight: 700;
 }
 
-section{
+article{
 	height: 100vh;
 	width: 100vh;
 	margin-top: 0;
@@ -196,21 +196,6 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 	color:  rgba(245, 118, 0, 1);
 }
 
-.input-field label {
-	-webkit-transform-origin: 0% 50%;
-	transform-origin: 0% 50%;
-	text-align: initial;
-	-webkit-transform: translateY(-10px);
-	transform: translateY(-10px);
-	pointer-events: none;
-}
-
-.input-field label:not(.label-icon).active {
-	-webkit-transform: translateY(-36px) scale(0.8);
-	transform: translateY(-36px) scale(0.8);
-	-webkit-transform-origin: 0 0;
-	transform-origin: 0 0;
-}
 
 .dropdown-content li > a, .dropdown-content li > span {
 	color: #1e5799;
@@ -244,9 +229,6 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 }
 
 /*MAIN*/
-#brand-title{
-
-}
 
 /*MAP*/
 #map {
@@ -256,8 +238,27 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 }
 
 /*SEARCH*/
+
+::-webkit-input-placeholder {
+	color: rgba(0,0,0,1);
+}
+::-moz-placeholder {
+	color: rgba(0,0,0,1);
+}
+:-ms-input-placeholder {
+	color: rgba(0,0,0,1);
+}
+::placeholder {
+	color: rgba(0,0,0,1);
+}
+
+
 #search{
 	background-color:  rgba(255, 255, 255, 1);
+}
+
+#search:active{
+	color: rgba(0,0,0,1);
 }
 
 #search:focus{
@@ -271,8 +272,29 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 	font-weight: 700;
 }
 /*GALLERY*/
+.card-panel{
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
 
-.rphoto{
-	position: relative;
-	display: inline-block;
-	float: left;
+.card-title{
+	padding: 1rem auto;
+	margin: 3rem auto 1rem auto;
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+.card-image{
+	padding: 1rem auto;
+	margin: 1rem;letter-spacing: 2px;
+}
+.card-content{
+	padding: 1rem auto 2rem auto;
+	margin: 1rem auto 3rem auto;
+	letter-spacing: 2px;
+}
+
+.card-content a:hover{
+	color:  rgba(245, 118, 0, 1);
+	text-decoration: underline;
+	transform: scale(1.1);
+}
